@@ -67,3 +67,8 @@ docker inspect <container_id> | grep IPAddress
 ```
 docker pull devopsjourney1/myjenkinsagents:python
 ```
+
+## Connect to the container as root 
+```
+docker exec -t -u 0 jenkins-blueocean /bin/bash
+```
